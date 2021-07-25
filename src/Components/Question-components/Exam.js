@@ -1,9 +1,28 @@
-import QNoList from "./QNoList";
+import LeftSection from "./LeftSection";
+import RightSection from "./RightSection";
+import SubmitExamBtn from "./SubmitExamBtn";
+
+import { makeStyles } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: "flex",
+  },
+}));
 
 const Exam = () => {
+  const classes = useStyles();
+
   return (
     <div>
-      <QNoList></QNoList>
+      <div className={classes.root}>
+        <CssBaseline />
+        <LeftSection />
+        <SubmitExamBtn />
+      </div>
+
+      <RightSection />
     </div>
   );
 };
