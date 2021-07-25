@@ -1,6 +1,5 @@
 import LeftSection from "./LeftSection";
 import RightSection from "./RightSection";
-import SubmitExamBtn from "./SubmitExamBtn";
 
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -19,7 +18,6 @@ const Exam = () => {
       <div className={classes.root}>
         <CssBaseline />
         <LeftSection />
-        <SubmitExamBtn />
       </div>
 
       <RightSection />

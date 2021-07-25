@@ -1,10 +1,10 @@
+import Timer from "./Timer";
+
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
+import CameraView from "./CameraView";
 
 const drawerWidth = 240;
 
@@ -15,6 +15,10 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
+  },
+  timerTop: {
+    marginTop: "5vh",
+    marginBottom: "5vh",
   },
 }));
 
@@ -30,16 +34,17 @@ const LeftSection = () => {
       }}
       anchor="left"
     >
-      <div />
       <Divider />
-      <List>
-        <ListItemIcon></ListItemIcon>
-        <ListItemText />
+      <List className={classes.timerTop}>
+        <Timer></Timer>
       </List>
       <Divider />
+
+      <List>Instructions</List>
+      <Divider />
+
       <List>
-        <ListItemIcon></ListItemIcon>
-        <ListItemText />
+        <CameraView />
       </List>
     </Drawer>
   );

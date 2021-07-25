@@ -2,23 +2,23 @@ import { Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles(() => ({
-  timer: {
+  CameraView: {
     width: "80%",
-    padding: "20px",
+    height: "20vh",
     margin: "auto",
     backgroundColor: "blue",
     borderRadius: "4px",
   },
 }));
-const Timer = () => {
+
+const CameraView = () => {
   const classes = useStyles();
+
   return (
-    <div>
-      <Box color="text.primary" className={classes.timer}>
-        abcd
-      </Box>
-    </div>
+    <Box color="text.primary" className={classes.CameraView}>
+      Camera View
+    </Box>
   );
 };
 
-export default Timer;
+export default CameraView;

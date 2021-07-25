@@ -13,7 +13,7 @@ const QNoList = () => {
   return (
     <Grid container justify="center" className={classes.pagiNation}>
       <Pagination
-        count={10}
+        count={5}
         variant="outlined"
         shape="rounded"
         color="primary"
