@@ -7,11 +7,12 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   QuizTop: {
     position: "relative",
+    padding: "3vh",
   },
   submitExamBtn: {
     position: "absolute",
-    top: "0",
-    right: "0",
+    top: "3vh",
+    right: "3vh",
   },
 }));
 
@@ -21,7 +22,9 @@ const RightSection = () => {
     <div>
       <div className={classes.QuizTop}>
         <QNoList />
-        <SubmitExamBtn className={classes.submitExamBtn} />
+        <div className={classes.submitExamBtn}>
+          <SubmitExamBtn />
+        </div>
       </div>
 
       <Question></Question>

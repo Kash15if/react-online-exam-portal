@@ -2,18 +2,14 @@ import Pagination from "@material-ui/lab/Pagination";
 import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
 
-const useStyles = makeStyles(() => ({
-  pagiNation: {
-    marginTop: "3vh",
-  },
-}));
+const useStyles = makeStyles(() => ({}));
 
 const QNoList = () => {
   const classes = useStyles();
   return (
     <Grid container justify="center" className={classes.pagiNation}>
       <Pagination
-        count={5}
+        count={20}
         variant="outlined"
         shape="rounded"
         color="primary"
