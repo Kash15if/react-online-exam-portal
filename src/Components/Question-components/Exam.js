@@ -14,13 +14,15 @@ const Exam = () => {
   const classes = useStyles();
 
   return (
-    <div>
-      <div className={classes.root}>
+    <div className={classes.root}>
+      <div>
         <CssBaseline />
         <LeftSection />
       </div>
 
-      <RightSection />
+      <div>
+        <RightSection />
+      </div>
     </div>
   );
 };
