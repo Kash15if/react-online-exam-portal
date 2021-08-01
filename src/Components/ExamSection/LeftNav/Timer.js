@@ -1,4 +1,6 @@
 import { makeStyles } from "@material-ui/core";
+import Timer from "react-compound-timer";
+import React from "react";
 
 const useStyles = makeStyles(() => ({
   timer: {
@@ -12,9 +14,33 @@ const useStyles = makeStyles(() => ({
     textAlign: "center",
   },
 }));
-const Timer = () => {
+const TimerComp = () => {
   const classes = useStyles();
-  return <h1 className={classes.timer}>01 : 56: 22</h1>;
+  return (
+    <Timer
+      initialTime={60 * 2 * 55000}
+      direction="backward"
+      checkpoints={[
+        {
+          time: 60 * 2 * 55000 - 5000,
+          callback: () => console.log("Checkpoint A"),
+        },
+        {
+          time: 60 * 2 * 55000 - 8000,
+          callback: () => console.log("Checkpoint B"),
+        },
+      ]}
+    >
+      {() => (
+        <React.Fragment>
+          <h1 className={classes.timer}>
+            <Timer.Hours /> : <Timer.Minutes /> : <Timer.Seconds />
+          </h1>
+          ;
+        </React.Fragment>
+      )}
+    </Timer>
+  );
 };
 
-export default Timer;
+export default TimerComp;
