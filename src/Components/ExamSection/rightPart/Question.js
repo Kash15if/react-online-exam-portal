@@ -28,6 +28,16 @@ const Question = () => {
               B can do the same job in 12 days. With help of C, they did the job
               in 4 days only. Then, C alone can do the job in:
             </Typography>
+            <Typography>
+              A can lay railway track between two given stations in 16 days and
+              B can do the same job in 12 days. With help of C, they did the job
+              in 4 days only. Then, C alone can do the job in:
+            </Typography>
+            <Typography>
+              A can lay railway track between two given stations in 16 days and
+              B can do the same job in 12 days. With help of C, they did the job
+              in 4 days only. Then, C alone can do the job in:
+            </Typography>
 
             <FormControl component="fieldset">
               <FormLabel component="legend">Gender</FormLabel>

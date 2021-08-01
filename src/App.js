@@ -1,4 +1,4 @@
-import Exam from "./Components/Question-components/Exam";
+import Exam from "./Components/ExamSection/Exam";
 import "./App.css";
 
 function App() {

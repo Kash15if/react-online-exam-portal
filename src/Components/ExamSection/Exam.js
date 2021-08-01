@@ -1,5 +1,5 @@
-import LeftSection from "./LeftSection";
-import RightSection from "./RightSection";
+import LeftSection from "./LeftNav/LeftSection";
+import RightSection from "./rightPart/RightSection";
 
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
